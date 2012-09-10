@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+
+echo 1 > /sys/devices/system/cpu/sched_smt_power_savings
+echo 1 > /sys/module/snd_hda_intel/parameters/power_save
+echo 0 > /proc/sys/kernel/nmi_watchdog
+echo 1 > /proc/sys/vm/laptop_mode
+
+ethtool -s eth0 wol d
+
+for i in /sys/class/scsi_host/host[01234]/link_power_management_policy;
+    do echo min_power > ${i};
+done
+
+iwconfig wlan0 power on 
+iw wlan0 set power_save on
+
+echo -n 120 > /sys/devices/platform/i8042/serio1/serio2/speed
+echo -n 250 > /sys/devices/platform/i8042/serio1/serio2/sensitivity
