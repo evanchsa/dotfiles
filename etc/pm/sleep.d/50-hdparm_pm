@@ -1,6 +1,0 @@
-#!/bin/dash
- 
-if [ -n "$1" ] && ([ "$1" = "resume" ] || [ "$1" = "thaw" ]); then
-    hdparm -B 180 /dev/sda > /dev/null
-    hdparm -B 127 /dev/sdb > /dev/null
-fi
