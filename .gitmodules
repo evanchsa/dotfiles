@@ -1,6 +1,6 @@
 [submodule ".tmux"]
 	path = .tmux
-	url = https://github.com/evanchsa/.tmux.git
+	url = https://github.com/gpakosz/.tmux.git
 [submodule "janus"]
 	path = janus
 	url = https://github.com/carlhuda/janus.git
@@ -10,3 +10,9 @@
 [submodule ".fzf"]
 	path = .fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "ssh-agent"]
+	path = ssh-agent
+	url = https://github.com/msimerson/ssh-agent.git
+[submodule "ssh-find-agent"]
+	path = ssh-find-agent
+	url = https://github.com/wwalker/ssh-find-agent.git
