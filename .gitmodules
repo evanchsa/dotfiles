@@ -7,3 +7,6 @@
 [submodule ".janus/pyflakes-vim"]
 	path = .janus/pyflakes-vim
 	url = git://github.com/kevinw/pyflakes-vim.git
+[submodule ".fzf"]
+	path = .fzf
+	url = https://github.com/junegunn/fzf.git
