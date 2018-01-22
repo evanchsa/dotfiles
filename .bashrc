@@ -5,11 +5,12 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # User specific aliases and functions
 export EDITOR=vim
+
+[ -f ~/.bashrc.local ] && source ~/.bashrc.local
+
+[ -f ~/.ssh-find-agent.sh ] && source ~/.ssh-find-agent.sh
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
