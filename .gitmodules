@@ -4,3 +4,6 @@
 [submodule "janus"]
 	path = janus
 	url = https://github.com/carlhuda/janus.git
+[submodule ".janus/pyflakes-vim"]
+	path = .janus/pyflakes-vim
+	url = git://github.com/kevinw/pyflakes-vim.git
