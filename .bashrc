@@ -15,6 +15,6 @@ export EDITOR=vim
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+  [[ ! $TERM =~ screen ]] && [[ $- = *i* ]] && [ -z $TMUX ] && exec tmux
 fi
 
