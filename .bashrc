@@ -8,6 +8,8 @@ fi
 # User specific aliases and functions
 export EDITOR=vim
 
+alias ls='ls -A --color=auto'
+
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
 
 [ -f ~/.ssh-find-agent.sh ] && source ~/.ssh-find-agent.sh && set_ssh_agent_socket
