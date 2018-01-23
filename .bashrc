@@ -10,7 +10,7 @@ export EDITOR=vim
 
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
 
-[ -f ~/.ssh-find-agent.sh ] && source ~/.ssh-find-agent.sh
+[ -f ~/.ssh-find-agent.sh ] && source ~/.ssh-find-agent.sh && set_ssh_agent_socket
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
